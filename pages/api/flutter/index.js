@@ -26,7 +26,7 @@ const baseUrl = `${process.env.MONGODB_DATA_API_URL}/action`;
   const readDataJson = await readData.json();
   res.status(200).json(readDataJson.documents);
   break;
-  case "POST":
+case "POST":
   const flutter = req.body;
   const insertData = await fetch(`${baseUrl}/insertOne`, {
     ...fetchOptions,
@@ -38,7 +38,7 @@ const baseUrl = `${process.env.MONGODB_DATA_API_URL}/action`;
   const insertDataJson = await insertData.json();
   res.status(200).json(insertDataJson);
   break;
-  case "PUT":
+case "PUT":
   const updateData = await fetch(`${baseUrl}/updateOne`, {
     ...fetchOptions,
     body: JSON.stringify({
@@ -54,7 +54,7 @@ const baseUrl = `${process.env.MONGODB_DATA_API_URL}/action`;
   const updateDataJson = await updateData.json();
   res.status(200).json(updateDataJson);
   break;
-  case "DELETE":
+case "DELETE":
   const deleteData = await fetch(`${baseUrl}/deleteOne`, {
     ...fetchOptions,
     body: JSON.stringify({
