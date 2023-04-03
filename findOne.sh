@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # 1. Data API App Id
-appid="<Data API App ID>"
+appid="data-urylh"
 
 # 2. API Key
-apikey="<Data API Key>"
+apikey="cljUibWynXCvnDFsM1XOJsDbdf94XKsrj56GCbVdZTIIYUyOUM3OV5q9iURzD09b"
 
 # 3. Base URL
 baseurl="https://data.mongodb-api.com/app/$appid/endpoint/data/v1"
